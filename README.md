@@ -303,7 +303,6 @@ Contributions are welcome! Here's how you can help:
 
 ## 📝 Future Enhancements
 
-- [ ] Add more ML models (Random Forest, XGBoost)
 - [ ] Include property amenities in predictions
 - [ ] Add price trend visualization
 - [ ] Implement user authentication
