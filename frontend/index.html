@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bengaluru House Price Predictor</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="main-div">
+            <h1>
+                <span class="icon-stack">
+                    <i class="fas fa-arrow-trend-up"></i>
+                    <i class="fas fa-city"></i>
+                </span>
+                Bengaluru Real Estate Price Predictor
+            </h1>
+            <p>Predict house prices in Bengaluru using Machine Learning</p>
+        </div>
+    </header>
+    
+    <main class="container">
+        <div class="prediction-form">
+            <h2>Enter Property Details</h2>
+            <form id="priceForm">
+                <div class="form-group">
+                    <label for="location">Location:</label>
+                    <select id="location" name="location" required>
+                        <option value="">Select Location</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="sqft">Total Square Feet: <small style="color: #666;">(Minimum: 100 sq ft)</small></label>
+                    <input type="number" id="sqft" name="sqft" max="50000" step="1" required placeholder="Enter square feet (minimum 100)">
+                </div>
+                
+                <div class="form-group">
+                    <label for="bhk">BHK (Bedrooms):</label>
+                    <select id="bhk" name="bhk" required>
+                        <option value="">Select BHK</option>
+                        <option value="1">1 BHK</option>
+                        <option value="2">2 BHK</option>
+                        <option value="3">3 BHK</option>
+                        <option value="4">4 BHK</option>
+                        <option value="5">5 BHK</option>
+                        <option value="6">6 BHK</option>
+                        <option value="7">7 BHK</option>
+                        <option value="8">8 BHK</option>
+                        <option value="9">9 BHK</option>
+                        <option value="10">10 BHK</option>
+                        <option value="11">11 BHK</option>
+                        <option value="12">12 BHK</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="bath">Bathrooms:</label>
+                    <select id="bath" name="bath" required>
+                        <option value="">Select Bathrooms</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                    </select>
+                </div>
+                
+                <button type="submit" class="predict-btn">
+                    <i class="fas fa-calculator"></i> Predict Price
+                </button>
+            </form>
+        </div>
+        
+        <div class="result-section" id="resultSection" style="display: none;">
+            <h3>Predicted Price</h3>
+            <div class="price-result" id="priceResult"></div>
+            <div class="property-details" id="propertyDetails"></div>
+        </div>
+        
+        <div class="loading" id="loading" style="display: none;">
+            <i class="fas fa-spinner fa-spin"></i> Calculating...
+        </div>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Bengaluru House Price Predictor | Built with Machine Learning</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
