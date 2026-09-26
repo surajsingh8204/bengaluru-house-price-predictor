@@ -7,7 +7,7 @@
 
 A full-stack machine learning web application that predicts house prices in Bengaluru based on location, square footage, number of bedrooms (BHK), and bathrooms. Built with Python, Flask, and deployed with a modern, responsive frontend.
 
-![Bengaluru House Price Predictor](https://via.placeholder.com/800x400?text=Bengaluru+House+Price+Predictor)
+![Bengaluru House Price Predictor](https://bengaluru-house-price-predictor-5naj.onrender.com)
 
 ## 🌟 Features
 
@@ -20,7 +20,7 @@ A full-stack machine learning web application that predicts house prices in Beng
 
 ## 🚀 Live Demo
 
-[**Try it Live**](https://your-deployment-url.onrender.com) *(Coming Soon)*
+[**Try it Live**](https://bengaluru-house-price-predictor-5naj.onrender.com)
 
 ## 📸 Screenshots
 
